@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BarberTime</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  
+<body>
+  <header>
+    <img width="100" src="./imgs/logo-barber.png" alt="Logo BarberTime" />
+    <h1>Agende seu corte na BarberTime</h1>
+  </header>
+
+  <main>
+    <section class="services">
+      <h2>Serviços Principais</h2>
+      <div class="service-list">
+        <div class="card">
+          <img src="./imgs/Degradê.png" alt="Corte Degradê" />
+          <label><input type="checkbox" class="servico" data-nome="Corte Degradê" data-preco="25" onchange="calcularTotal()" /> Corte Degradê (R$25)</label>
+        </div>
+        <div class="card">
+          <img src="./imgs/Social.png" alt="Corte Social" />
+          <label><input type="checkbox" class="servico" data-nome="Corte Social" data-preco="25" onchange="calcularTotal()" /> Corte Social (R$25)</label>
+        </div>
+        <div class="card">
+          <img src="./imgs/barboterapia.png" alt="Barboterapia" />
+          <label><input type="checkbox" class="servico" data-nome="Barboterapia" data-preco="25" onchange="calcularTotal()" /> Barboterapia (R$25)</label>
+        </div>
+        <div class="card">
+          <img src="./imgs/estilo de barba.png" alt="Barba" />
+          <label><input type="checkbox" class="servico" data-nome="Barba" data-preco="15" onchange="calcularTotal()" /> Barba (R$15)</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="extras">
+      <h2>Serviços Adicionais</h2>
+      <ul>
+        <li><input type="checkbox" class="adicional" data-nome="Lavagem" data-price="5" onchange="calcularTotal()"> Lavagem</li>
+        <li><input type="checkbox" class="adicional" data-nome="Massagem Capilar" data-price="10" onchange="calcularTotal()"> Massagem Capilar</li>
+        <li><input type="checkbox" class="adicional" data-nome="Toalha Quente" data-price="3" onchange="calcularTotal()"> Toalha Quente</li>
+        <li><input type="checkbox" class="adicional" data-nome="Óleo para Barba" data-price="7" onchange="calcularTotal()"> Óleo para Barba</li>
+        <li><input type="checkbox" class="adicional" data-nome="Creme Hidratação" data-price="8" onchange="calcularTotal()"> Creme Hidratação</li>
+        <li><input type="checkbox" class="adicional" data-nome="Toalha Gelada" data-price="4" onchange="calcularTotal()"> Toalha Gelada</li>
+      </ul>
+    </section>
+
+    <section class="resumo">
+      <h2>Resumo do Agendamento</h2>
+      <p>Nome: <input type="text" id="nome"/></p>
+      <p>CPF: <input type="text" id="cpf"/></p>
+      <p>Data: <input type="date" id="data"/> Hora: <input type="time" id="hora"/></p>
+      <p><strong>Serviços Selecionados:</strong> <span id="resumoServicos"></span></p>
+      <p><strong>Adicionais Selecionados:</strong> <span id="resumoAdicionais"></span></p>
+      <p><strong>Preço Total:</strong> R$ <span id="precoTotal">0.00</span></p>
+      <button onclick="enviarAgendamento()">Agendar</button>
+      <div id="mensagemSucesso" style="font-weight: bold; margin-top: 15px;"></div>
+      <hr>
+      <h3>Histórico de Agendamentos</h3>
+      <p>
+        Buscar por CPF: <input type="text" id="buscarCpf" />
+        <button onclick="verHistoricoPorCpf()">Ver</button>
+      </p>
+      <p>
+        Buscar por Nome: <input type="text" id="buscarNome" />
+        <button onclick="verHistoricoPorNome()">Ver</button>
+      </p>
+      <div id="historico" style="margin-top: 15px;"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "barbertime",
+  "version": "1.0.0",
+  "description": "O sistema BarberTime foi desenvolvido com o objetivo de modernizar e facilitar o processo de agendamento de serviços em uma barbearia. Através de uma interface simples e intuitiva, o cliente pode selecionar um serviço principal, como corte de cabelo ou barba, escolher serviços adicionais (como lavagem, massagem capilar, toalha quente, entre outros), visualizar o valor total atualizado em tempo real, e preencher seus dados para concluir o agendamento. O sistema será uma aplicação fullstack com back-end, front-end e banco de dados (postgres).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pg": "^8.16.2"
+  }
+}

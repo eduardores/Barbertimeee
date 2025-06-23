@@ -1,0 +1,126 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: #1e1e2f;
+  font-weight: 600;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card label {
+  font-weight: 500;
+}
+
+.extras, .resumo {
+  background: white;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #1e1e2f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #343454;
+}
+
+#mensagemSucesso {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+#historico ul {
+  padding-left: 0;
+}
+
+#historico li {
+  background: #f9f9f9;
+  border-left: 5px solid #1e1e2f;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+  
+  
